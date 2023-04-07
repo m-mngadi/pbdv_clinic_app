@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnclose"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_901">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearHistoryAppoint"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearNavbar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_901">
+                    <ImageButton android:background="@color/gray_901"
+                        android:id="@+id/btnClose"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_44pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="@dimen/_44pxh"
+                        android:paddingHorizontal="@dimen/_15pxh"
+                        android:paddingVertical="@dimen/_15pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_close" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFrameTwelve"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_view_appointment"
+                    style="@style/txtSolid" tools:text="@string/msg_view_appointment"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnstudentnumber"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_20pxv"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtStudentNumber"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_student_number"
+                        style="@style/txtIntersemibold16" tools:text="@string/lbl_student_number"/>
+
+                    <TextView
+                        android:id="@+id/StudentNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="text" />
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFirstName"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_first_name"
+                        style="@style/txtIntersemibold16" tools:text="@string/lbl_first_name"/>
+
+                    <TextView
+                        android:id="@+id/FirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="text" />
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLastName"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_last_name"
+                        style="@style/txtIntersemibold16" tools:text="@string/lbl_last_name"/>
+
+                    <TextView
+                        android:id="@+id/LastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="text" />
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtQualification"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_qualification"
+                        style="@style/txtIntersemibold16" tools:text="@string/lbl_qualification"/>
+
+                    <TextView
+                        android:id="@+id/Qualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="text" />
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtClinic"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_clinic"
+                        style="@style/txtIntersemibold16" tools:text="@string/lbl_clinic"/>
+
+                    <TextView
+                        android:id="@+id/Clinic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="text" />
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAppointmentDat"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/msg_appointment_dat"
+                        style="@style/txtIntersemibold16" tools:text="@string/msg_appointment_dat"/>
+
+                    <TextView
+                        android:id="@+id/AppointmentDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTime"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/lbl_time"
+                        style="@style/txtIntersemibold16" tools:text="@string/lbl_time"/>
+
+                    <TextView
+                        android:id="@+id/AppointmentTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="time" />
+
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowframeeight"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAdditionalNote"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/msg_additional_note"
+                        style="@style/txtIntersemibold16" tools:text="@string/msg_additional_note"/>
+
+                    <TextView
+                        android:id="@+id/AdditionalNotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="none"
+                        android:gravity="center"
+                        android:id="@+id/btnRescheduleAppointment"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_48pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="@dimen/_257pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/msg_reschedule_appo"
+                        android:textAllCaps="false"
+                        style="@style/btnSolid" tools:text="@string/msg_reschedule_appo"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/btnCancelAppointment"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_48pxv"
+                        android:layout_marginEnd="@dimen/_30pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="@dimen/_257pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_10pxh"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/msg_cancel_appointm"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidOutline" tools:text="@string/msg_cancel_appointm"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearFeedbackSucces"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_901">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnfeedbacksubmit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_901">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtFeedbacksubmit"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_61pxh"
+                android:layout_marginStart="@dimen/_61pxh"
+                android:layout_marginTop="@dimen/_108pxv"
+                android:layout_width="match_parent"
+                android:text="@string/msg_feedback_submit"
+                style="@style/txtIntersemibold24" tools:text="@string/msg_feedback_submit"/>
+            <ImageView android:id="@+id/imageCheckmark"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_109pxv"
+                android:layout_marginEnd="@dimen/_61pxh"
+                android:layout_marginStart="@dimen/_61pxh"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_width="@dimen/_40pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_checkmark"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearNavbar"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_4pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnCool"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_144pxh"
+                android:layout_marginStart="@dimen/_144pxh"
+                android:layout_marginTop="@dimen/_116pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_10pxh"
+                android:paddingStart="@dimen/_10pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_cool"
+                android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_cool"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

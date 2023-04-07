@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearUpcomingAppointments"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_901">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp" style="@style/groupStylegray_901">
+            <LinearLayout android:id="@+id/linearRowmenu"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageButton android:background="@color/gray_901"
+                    android:id="@+id/btnMenu"
+                    android:layout_height="@dimen/_48pxh"
+                    android:layout_width="@dimen/_48pxh"
+                    android:paddingHorizontal="@dimen/_13pxh"
+                    android:paddingVertical="@dimen/_13pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_menu_white_a700" tools:ignore="ContentDescription"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_901_radius_24"
+                    android:id="@+id/btnUser"
+                    android:layout_height="@dimen/_48pxh"
+                    android:layout_marginStart="@dimen/_228pxh"
+                    android:layout_width="@dimen/_48pxh"
+                    android:paddingHorizontal="@dimen/_13pxh"
+                    android:paddingVertical="@dimen/_13pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_user" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/linearColumnTabBar"
+            style="@style/groupStylegray_901"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:baselineAligned="false"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/UpcomingTab"
+                style="@style/txtInterbold16"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/white_A700"
+                android:gravity="center"
+                android:text="Upcoming"
+                android:textColor="@color/gray_900" />
+
+            <TextView
+                android:id="@+id/HistoryTab"
+                style="@style/txtInterbold16"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray_900"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="@color/white_A700" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_gray_900_radius_32"
+                android:id="@+id/btnNewAppointment"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_64pxh"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_444pxv"
+                android:layout_width="@dimen/_64pxh"
+                android:paddingHorizontal="@dimen/_18pxh"
+                android:paddingVertical="@dimen/_18pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_computer" tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

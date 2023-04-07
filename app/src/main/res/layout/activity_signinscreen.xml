@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearLoginScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_901">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearNavbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_901">
+            <ImageButton android:background="@color/gray_901"
+                android:id="@+id/btnClose"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_44pxh"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_44pxh"
+                android:paddingHorizontal="@dimen/_15pxh"
+                android:paddingVertical="@dimen/_15pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_close" tools:ignore="ContentDescription"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnsignin"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSignIn"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_31pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_in2"
+                style="@style/txtIntersemibold20" tools:text="@string/lbl_sign_in2"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEmailAddress"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_email_address"
+                style="@style/txtIntersemibold16" tools:text="@string/lbl_email_address"/>
+
+            <EditText
+                android:id="@+id/signInEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_password"
+                style="@style/txtIntersemibold16" tools:text="@string/lbl_password"/>
+
+            <EditText
+                android:id="@+id/signInPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtForgotpassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/msg_forgot_password"
+                style="@style/txtInterlight16_1" textUnderline="true" tools:text="@string/msg_forgot_password"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSignInOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="@dimen/_86pxh"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_10pxh"
+                android:paddingStart="@dimen/_10pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_in2"
+                android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_sign_in2"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSignUp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginBottom="@dimen/_69pxv"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="@dimen/_96pxh"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_10pxh"
+                android:paddingStart="@dimen/_10pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_up"
+                android:textAllCaps="false" style="@style/btnOutline" tools:text="@string/lbl_sign_up"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumncodesurfers"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_901">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtCodesurfers"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_codesurfers"
+                style="@style/txtIntersemibold20_1" tools:text="@string/lbl_codesurfers"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

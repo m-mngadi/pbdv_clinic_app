@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearBookingsuccess"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_901">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnAppointmentBookSuccess"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_901">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtAppointmentBookSuccess"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="65dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="125dp"
+                android:layout_width="match_parent"
+                android:text="@string/msg_appointment_boo"
+                style="@style/txtIntersemibold24" tools:text="@string/msg_appointment_boo"/>
+            <ImageView android:id="@+id/imageCheckmark"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="125dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_checkmark"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearNavbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="none" android:gravity="center"
+                android:id="@+id/btnCool"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="130dp"
+                android:layout_width="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:singleLine="true"
+                android:text="@string/lbl_cool"
+                android:textAllCaps="false" style="@style/btnSolid" tools:text="@string/lbl_cool"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
